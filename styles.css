@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+}
+
+.body1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #93cbe1;
+    grid-template-areas: "page-header page-header page-header"
+        "lleft page-main page-main"
+        "page-footer page-footer page-footer";
+}
+
+.page-header {
+    grid-area: page-header;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'comic sans ms';
+    font-size: 150%;
+    height: 100%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.navigation-item a {
+    padding: 7px;
+    color: #1d4963;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.navigation-item a:hover {
+    background: rgba(253, 255, 252, 0.5);
+    color: #252a2d;
+}
+
+.navigation-item {
+    display: block;
+    margin: 10px;
+    padding: 15px;
+}
+
+.page-main1 {
+    grid-area: page-main;
+    background-color: rgb(234, 39, 81);
+    border-radius: 30px;
+    margin: 30px;
+    margin-left: 0;
+    padding: 40px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-top: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe script';
+    color: #1d4963;
+}
+
+.bio-text {
+    font-family: 'segoe print';
+    color: #93cbe1;
+}
+
+.left {
+    grid-area: lleft;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-footer {
+    grid-area: page-footer;
+    background: rgba(17, 59, 85, 0.9);
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.logo {
+    margin: auto;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-item {
+    display: block;
+    margin: 3px;
+    padding: 5px;
+}
+
+.skills {
+    margin: 0;
+    margin-top: 3px;
+    padding: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.yap {
+    font-family: 'segoe print';
+    color: #1d4963;
+}
+
+.progress {
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.slider {
+    width: 20%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(234, 39, 81);
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    color: #1d4963;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(234, 39, 81);
+    border-radius: 30px;
+}
+
+li:nth-child(2) .slider {
+    width: 13%;
+}
+
+li:nth-child(3) .slider {
+    width: 25%;
+}
+
+.body3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #93cbe1;
+    grid-template-areas: "page-header page-header page-header"
+        "info info info"
+        "image image image"
+        "page-footer page-footer page-footer";
+}
+
+.info {
+    grid-area: info;
+    text-align: center;
+}
+
+.page-main3 {
+    grid-area: image;
+    margin: 30px;
+}
+
+.works-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    list-style-type: none;
+    height: 100%;
+}
+
+.works-item {
+    background: rgba(17, 59, 85, 0.5);
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.body2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #93cbe1;
+    grid-template-areas: "page-header page-header page-header"
+        "info_me work work"
+        "info_me skills_re educ"
+        "page-footer page-footer page-footer";
+}
+
+.info-me {
+    grid-area: info_me;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.in {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.education {
+    grid-area: educ;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15%;
+}
+
+.skills-re {
+    grid-area: skills_re;
+    background: rgba(17, 59, 85, 0.2);
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15%;
+}
+
+.work {
+    grid-area: work;
+    margin: 30px;
+    padding: 15px;
+    background: rgba(17, 59, 85, 0.2);
+    border-radius: 15%;
+}
+
+.work-text {
+    font-family: 'comic sans ms';
+    color: #1d4963;
+}
